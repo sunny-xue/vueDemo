@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <title>Demo3--渲染列表</title>
+</head>
+
+<body>
+    <div id="app">
+        <ul>
+            <li v-for="todo in todos">
+                {{todo.text}}
+            </li>
+        </ul>
+    </div>
+</body>
+<script type="text/javascript" src="vue/dist/vue.min.js"></script>
+<script type="text/javascript">
+new Vue({
+    el: '#app',
+    data: {
+        todos: [{
+            text: 'Learn JavaScript'
+        }, {
+            text: 'Learn Vue.js'
+        }, {
+            text: 'Build Something Awesome!'
+        }]
+    }
+});
+</script>
+
+</html>

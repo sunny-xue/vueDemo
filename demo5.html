@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <title>IFRAME</title>
+     <style>
+        html,body{margin:0;padding:0;border:0;width:100%;height:100%;overflow-x:hidden;overflow-y:hidden; }
+    </style>
+</head>
+<body>
+    <iframe id="myIframe" width="100%" height="100%" src="http://www.baidu.com" frameborder="0" marginheight="0" marginwidth="0"></iframe>
+</body>
+<script type="text/javascript">
+function setUrl(url){
+ document.getElementById("myIframe").src=url;
+}
+this.onmouseover = function(){
+ document.getElementById("myIframe").contentWindow.focus();
+};
+</script>
+</html>
